@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="false">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/net_conf_details.html">Network configuration details</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="false">Configure</a>
+                    <ul class="collapse list-unstyled" id="Configure">
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="false">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse list-unstyled" id="ccelasti">
+                                <li><a href="../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="false">Setting up data access protocols</a>
+                                    <ul class="collapse list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="true">Manage</a>
+                    <ul class="collapse in list-unstyled" id="manage">
+                        <li><a href="../E.Managing CloudByte ElastiStor/delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li class="active"><a href="../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="color: #013364;font-family: sans-serif;font-size: 18pt;">Global Settings</h2>
+            <p style="font-family: sans-serif;font-size: 11pt;">Global settings let the administrator configure various options used to control CloudByte ElastiStor. For example, email configuration. To configure global settings,</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In ElastiCenter, select Global Settings.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Select a target category. A list of settings is provided by default.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Edit the relevant settings.</li>
+            </ol>
+            <p class="note" style="font-family: sans-serif;"><b>Note:</b> You cannot add new settings.</p>
+            <p>This section lists the global settings options available on the ElastiCenter.</p>
+            <table style="">
+                <col style="width: 259px;" />
+                <col style="width: 300px;" />
+                <col style="width: 240px;" />
+                <col style="width: 9px;" />
+                <thead>
+                    <tr>
+                        <td style="background-color: #808080;color: #ffffff;text-align: center;">Option</td>
+                        <td style="background-color: #808080;color: #ffffff;text-align: center;">Description</td>
+                        <td style="background-color: #808080;color: #ffffff;text-align: center;">Default Value</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tablecode"><code>alert.email.addresses</code>
+                            <![CDATA[ ]]>
+                        </td>
+                        <td style="background-color: #dcdcdc;">Comma separated list of email addresses used for sending alerts.</td>
+                        <td style="background-color: #dcdcdc;">
+                            Email ID you specified in the <code>Update Profile</code> section in ElastiCenter.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">alert.email.enable</td>
+                        <td style="background-color: #dcdcdc;">If true, emails are sent to the specified email addresses.</td>
+                        <td style="background-color: #dcdcdc;">TRUE </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode"> alert.email.sender</td>
+                        <td style="background-color: #dcdcdc;">Sender of the alert email.</td>
+                        <td style="background-color: #dcdcdc;">
+                            <![CDATA[ ]]>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">alert.email.severity</td>
+                        <td style="background-color: #dcdcdc;">
+                            Set the email severity level to one of the following:
+                            <ul>
+                                <li class="table"> 1 - ERROR</li>
+                                <li class="table"> 2 - CRITICAL</li>
+                                <li class="table"> 3 - WARNING</li>
+                                <li class="table"> 4 - INFO</li>
+                            </ul>
+                        </td>
+                        <td style="background-color: #dcdcdc;">4
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;" class="tablecode">
+                            alert.smtp.host </td>
+                        <td style="background-color: #dcdcdc;">SMTP hostname to send alert emails.</td>
+                        <td style="background-color: #dcdcdc;">
+                            localhost</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;" class="tablecode">alert.smtp.password </td>
+                        <td style="background-color: #dcdcdc;">Password for SMTP authentication (applies only if <code>alert.smtp.useAuth</code> is true).</td>
+                        <td style="background-color: #dcdcdc;">
+                            <![CDATA[ ]]>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;" class="tablecode">alert.smtp.port</td>
+                        <td style="background-color: #dcdcdc;">The port of the SMTP server.</td>
+                        <td style="background-color: #dcdcdc;">
+                            <p>587</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">alert.smtp.useAuth</td>
+                        <td style="background-color: #dcdcdc;">If true, SMTP authentication is enabled to send emails. </td>
+                        <td style="background-color: #dcdcdc;">
+                            False
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">
+                            alert.smtp.username
+                        </td>
+                        <td style="background-color: #dcdcdc;">Username for SMTP authentication (applies only if <code>alert.smtp.useAuth</code> is true).</td>
+                        <td style="background-color: #dcdcdc;">
+                            <![CDATA[ ]]>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autoSupport.config.details</td>
+                        <td style="background-color: #dcdcdc;">Send configuration details to CloudByte as part of an auto support email.</td>
+                        <td style="background-color: #dcdcdc;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autosupport.httpnotify.apikey </td>
+                        <td style="background-color: #dcdcdc;">API key of CloudByte auto support server.</td>
+                        <td style="background-color: #dcdcdc;">
+                            <![CDATA[ ]]>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autosupport.httpnotify.enable</td>
+                        <td style="background-color: #dcdcdc;">Send HTTP post request to CloudByte auto support server.</td>
+                        <td style="background-color: #dcdcdc;">
+                            <p>False</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autosupport.httpnotify.ipaddress</td>
+                        <td style="background-color: #dcdcdc;">The IP address of CloudByte auto support server.
+                        </td>
+                        <td style="background-color: #dcdcdc;">
+                            <![CDATA[ ]]>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autoSupport.infastructure.statistics</td>
+                        <td style="background-color: #dcdcdc;">Send infrastructure statistics to CloudByte as part of an auto support email.</td>
+                        <td style="background-color: #dcdcdc;">Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autoSupport.product.alerts</td>
+                        <td style="background-color: #dcdcdc;">Send product related alerts to CloudByte as part of an auto support email.</td>
+                        <td style="background-color: #dcdcdc;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autoSupport.reg.details</td>
+                        <td style="background-color: #dcdcdc;">Send registration details to CloudByte as part of an auto support email.</td>
+                        <td style="background-color: #dcdcdc;">
+                            <p class="table">Yes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">autoSupport.tenant.statistics</td>
+                        <td style="background-color: #dcdcdc;">Send tenant statistics to CloudByte as part of an auto support email.</td>
+                        <td style="background-color: #dcdcdc;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">bad.disk.threshold</td>
+                        <td style="background-color: #dcdcdc;">The number of defects grown on disk that will declare it as a bad disk</td>
+                        <td style="background-color: #dcdcdc;">512</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">cache.multiplication.factor</td>
+                        <td style="background-color: #dcdcdc;">The number of Cache READs which equal a disk READ. The default value is 3 which means 1 disk READ equals 3 cache READs. Only a value between 2 and 6 is supported.</td>
+                        <td style="background-color: #dcdcdc;">3</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">devman.backup.files.retain</td>
+                        <td style="background-color: #dcdcdc;">The number of backup files to be retained.</td>
+                        <td style="background-color: #dcdcdc;">5</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">devman.backup.path</td>
+                        <td style="background-color: #dcdcdc;">The path of ElastiCenter backup directory.</td>
+                        <td style="background-color: #dcdcdc;"><code>/var/devman/backups</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">devman.backup.scheduling.interval</td>
+                        <td style="background-color: #dcdcdc;">The interval time for ElastiCenter backup.</td>
+                        <td style="background-color: #dcdcdc;">1</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">devman.build.number</td>
+                        <td style="background-color: #dcdcdc;">The build version of ElastiStor.</td>
+                        <td style="background-color: #dcdcdc;">Available in <code>/cbdir/buildversion</code></td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">monitor.purge.retain.days</td>
+                        <td style="background-color: #dcdcdc;">The number of days that the data has to be retained for.</td>
+                        <td style="background-color: #dcdcdc;">60</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">monitor.qos.stats.interval</td>
+                        <td style="background-color: #dcdcdc;">The time interval (in seconds) taken for QoS statistics to be retrieved from Nodes.</td>
+                        <td style="background-color: #dcdcdc;">300</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">monitor.refresh.interval</td>
+                        <td style="background-color: #dcdcdc;">The time interval (in seconds) required to refresh the Storage Volumes page.</td>
+                        <td style="background-color: #dcdcdc;">300</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">monitor.storage.stats.interval</td>
+                        <td style="background-color: #dcdcdc;">The time interval (in seconds) taken for storage statistics to be retrieved from Nodes.</td>
+                        <td style="background-color: #dcdcdc;">300</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">monitor.system.purge.retain.days</td>
+                        <td style="background-color: #dcdcdc;">The number of days that the data has to be retained for.
+                        </td>
+                        <td style="background-color: #dcdcdc;">7</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">no.of.nodes.per.hagroup</td>
+                        <td style="background-color: #dcdcdc;">Limiting number of Nodes in an HA Group.</td>
+                        <td style="background-color: #dcdcdc;">&#160;</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">project.invite.required </td>
+                        <td style="background-color: #dcdcdc;">Specify if invitation confirmation is required when add account to project.</td>
+                        <td style="background-color: #dcdcdc;">False</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">provisioning.sb.algo</td>
+                        <td style="background-color: #dcdcdc;">Algorithm used for auto-provisioning Storage Volume.</td>
+                        <td style="background-color: #dcdcdc;">Best Fit</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">provisioning.sb.auto</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable auto-provisioning of Storage Volumes.</td>
+                        <td style="background-color: #dcdcdc;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">provisioning.tsm.algo</td>
+                        <td style="background-color: #dcdcdc;">Algorithm used for auto-provisioning VSM.</td>
+                        <td style="background-color: #dcdcdc;">Best Fit</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">provisioning.tsm.auto</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable auto-provisioning of VSMs. </td>
+                        <td style="background-color: #dcdcdc;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">qos.penalty.allowed.delta </td>
+                        <td style="background-color: #dcdcdc;">Percentage (as a value between 1 and 100) up to which penalty will be not be considered</td>
+                        <td style="background-color: #dcdcdc;">10</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">qos.penality.blocksize</td>
+                        <td style="background-color: #dcdcdc;">Standard blocksize (in KB) per IOPS, used in provisioning and penality enforcement.</td>
+                        <td style="background-color: #dcdcdc;">4</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">
+                            qos.penalty.blocksize.factor </td>
+                        <td style="background-color: #dcdcdc;">Considers block size for penalty calculations. Specify yes to Enable and No to Disable.</td>
+                        <td style="background-color: #dcdcdc;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">
+                            qos.penalty.cachehit.factor</td>
+                        <td style="background-color: #dcdcdc;"> Considers cache hit for penalty caclulations. Specify yes to Enable and No to Disable.</td>
+                        <td style="background-color: #dcdcdc;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">qos.penalty.enforcement.timeinterval</td>
+                        <td style="background-color: #dcdcdc;">The time interval (in seconds) for which penalty has to be applied on QoS values.</td>
+                        <td style="background-color: #dcdcdc;">300</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">qos.penalty.readwrite.factor </td>
+                        <td style="background-color: #dcdcdc;">Considers READs vs WRITEs for penalty caclulations. Specify yes to Enable and No to Disable. </td>
+                        <td style="background-color: #dcdcdc;">No </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">read.multiplication.factor</td>
+                        <td style="background-color: #dcdcdc;">
+                            Specify how many READs equal a WRITE. The default value is 4 which means 1 WRITE equals 4 READs. Only a value between 3 and 6 is supported.</td>
+                        <td style="background-color: #dcdcdc;">4</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.email.sender</td>
+                        <td style="background-color: #dcdcdc;">Sender of report email.</td>
+                        <td style="background-color: #dcdcdc;">&#160;</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.smtp.host</td>
+                        <td style="background-color: #dcdcdc;">SMTP hostname used for sending out report emails.</td>
+                        <td style="background-color: #dcdcdc;">localhost</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.smtp.password</td>
+                        <td style="background-color: #dcdcdc;">Password for SMTP authentication (applies only if <code>report.smtp.useAuth</code> is true).</td>
+                        <td style="background-color: #dcdcdc;">&#160;</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.smtp.port</td>
+                        <td style="background-color: #dcdcdc;">The port of the SMTP server.</td>
+                        <td style="background-color: #dcdcdc;">587</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.smtp.useAuth</td>
+                        <td style="background-color: #dcdcdc;">If true, SMTP authentication is enabled to send emails. </td>
+                        <td style="background-color: #dcdcdc;">False</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">report.smtp.username</td>
+                        <td style="background-color: #dcdcdc;">Username for SMTP authentication (applies only if <code>report.smtp.useAuth</code> is true).</td>
+                        <td style="background-color: #dcdcdc;">&#160;</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">ui.protocol.enablefc</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable all FC protocol related options from ElastiCenter.</td>
+                        <td style="background-color: #dcdcdc;">True</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">ui.protocol.enablehaadmincreation</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable haAdmin creation options from ElastiCenter.</td>
+                        <td style="background-color: #dcdcdc;">
+                            False
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">ui.protocol.enablezilmirroring </td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable ZIL mirroring creation options from ElastiCenter.</td>
+                        <td style="background-color: #dcdcdc;">False</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">provisioning.uncontrolled.iops</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable provisioning with uncontrolled (zero) IOPS. Specify TRUE to enable. </td>
+                        <td style="background-color: #dcdcdc;">False</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">alert.qos.throttling.percentage</td>
+                        <td style="background-color: #dcdcdc;">Sends an alert if the throttled IOPS percentage exceeds the specified value and if<code> alert.qos.throttle.count</code> is encountered for the specified number of times. </td>
+                        <td style="background-color: #dcdcdc;">20</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">alert.qos.throttle.count</td>
+                        <td style="background-color: #dcdcdc;">Sends an alert if the number of consistent throttling exceeds the specified value and<code> alert.qos.throttling.percentage</code> exceeds the specified value.
+                        </td>
+                        <td style="background-color: #dcdcdc;">10</td>
+                    </tr>
+                    <tr>
+                        <td class="tablecode">devman.enable.ipspaces</td>
+                        <td style="background-color: #dcdcdc;">Enable/Disable the <code>Assigning real IP spaces</code> feature.</td>
+                        <td style="background-color: #dcdcdc;">False</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

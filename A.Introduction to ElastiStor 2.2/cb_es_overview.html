@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="true">Getting Started</a>
+                    <ul class="collapse in list-unstyled" id="g-Started">
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="false">Configure</a>
+                    <ul class="collapse list-unstyled" id="Configure">
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="false">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse list-unstyled" id="ccelasti">
+                                <li><a href="../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="false">Setting up data access protocols</a>
+                                    <ul class="collapse list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 class="NoPageBreakBefore" style="font-family: sans-serif;font-size: 20pt;color: #013364;"><span style="color: #013364;font-size: 20pt;font-family: sans-serif;">Introduction</span>
+            </h2>
+            <p style="font-family: sans-serif;color: #005db2;font-size: 14pt;">What is CloudByte ElastiStor</p>
+            <p style="font-family: sans-serif;"><span style="font-size: 12pt;font-family: sans-serif;">CloudByte ElastiStor is a full-featured software-defined storage QoS solution, purpose-built for the cloud and virtualized environments. Software-only ElastiStor makes storage predictable, affordable and easy, even as you scale to thousands of applications. Installable on a wide range of industry-standard servers, ElastiStor frees enterprises and service providers from vendor lock-ins. ElastiStor lets you custom-build storage infrastructure based on your requirements, with support for SATA, SAS, and SSD hardware as well as NFS, CIFS, FC, and iSCSI protocols.</span></p>
+            <h4 style="font-family: sans-serif;font-size: 14pt;color: #005db2;"><span style="font-size: 16pt;color: #005db2;font-family: li;">Cloud-scale Performance</span>
+            </h4>
+            <p style="font-family: sans-serif;"><span style="font-size: 12pt;">The allocation of application-specific storage silos to deliver performance does not scale well in today’s cloud and virtualized environments. ElastiStor enables you to guarantee performance (IOPS, throughput, and latency) for every application right from a common storage platform. This fully shared storage optimizes your infrastructure, minimizes your CAPEX, and enables more performance applications to move to the cloud</span>.</p>
+            <h4 style="font-family: sans-serif;font-size: 14pt;"><span style="font-size: 16pt;color: #005db2;font-family: sans-serif;">No Vendor Lock-in</span>
+            </h4>
+            <p style="font-family: sans-serif;"><span style="font-size: 12pt;">In addition to being software-defined, ElastiStor eliminates the need for you to lock into specific vendors or overspend on proprietary hardware. The benefits of commodity, industry-standard resources are first reflected in minimized CAPEX, and later make shifting vendors easy with no proprietary hardware lock-in</span>
+            </p>
+            <h4 style="font-family: sans-serif;font-size: 14pt;color: #005db2;"><span style="font-size: 16pt;color: #005db2;font-family: li;">Hardware Flexibility</span>
+            </h4>
+            <p style="font-family: sans-serif;"><span style="font-size: 12pt;font-family: sans-serif;">Restricting storage media choice is not an ideal scenario when you have a wide variety of performance needs, from archival to big data applications, and it is definitely not practical to fit every performance-sensitive application on an all-SSD array.  ElastiStor is software-only so you continue to work with the storage media of your choice – SSD, SAS, SATA, or any mix – optimized for your performance needs.</span>
+            </p>
+            <h4 style="color: #4169e1;"><span style="font-size: 16pt; font-family: 'Times New Roman';"><span style="color: #005db2;font-family: sans-serif;">Simple Management</span></span>
+            </h4>
+            <p style="font-family: sans-serif;"><span style="font-size: 12pt;">Managing storage for a large number of applications and their constantly changing performance demands is not for the faint hearted. Manual tuning of spindles or other hardware is no longer an option.  Being software-defined, ElastiStor allows you to instantly provision fully-elastic storage volumes for any workload from the shared storage pool to enable fast deployment and reconfiguration options. Now it is a simple matter to schedule backups, migrate sites, and empower customers with comprehensive management rights for their dedicated storage. Additionally, datacenter admins will be able to provision and manage QoS-aware storage volumes for VMs right from VMWare vCenter, Citrix XenCenter, OpenStack Horizon, or CloudStack.</span>
+            </p>
+            <h4><span style="font-size: 16pt; font-family: 'Times New Roman';"><span style="color: #005db2;font-family: sans-serif;font-size: 14pt;">Affordable</span></span>
+            </h4>
+            <p><span style="font-size: 12pt;">With CloudByte ElastiStor you can now replace hundreds of legacy storage silos in your datacenters with a single, extensible storage platform. By fully sharing your infrastructure, deploying industry-standard hardware and optimally choosing your storage media, ElastiStor can significantly reduce your datacenter footprint, leading to 80-90% cost savings over 3-5 years.  Add simplified management that brings down your operational costs, and you get the lowest cost storage QoS solution.</span>
+            </p>
+            <h3 style="font-weight: bold;color: #008000;"><span style="font-size: 16pt;font-family: 'Times New Roman';color: #013364;">CloudByte ElastiStor features</span>
+            </h3>
+            <p><span style="font-size: 12pt;">Along with the standard storage features, CloudByte ElastiStor provides certain product-specific features of which some are unique.</span>
+            </p>
+            <h5 style="font-weight: normal;"><span style="font-weight: bold;font-family: sans-serif;font-size: 11.8pt;color: #005db2;">Guaranteed Storage QoS within Shared Storage</span>
+            </h5>
+            <p style="font-size: 12pt;">Share your storage and deliver predictable performance to every application. For the first time ever, ElastiStor allows storage endpoints to be defined beyond capacity, in terms of IOPS, throughput and latency. This allows applications with
+                diverse workloads to be guaranteed QoS from a shared storage platform. Together with linear scaling, a single extensible shared storage platform from ElastiStor can now replace legacy solutions’ dedicated storage silos. By fully sharing
+                storage and optimally utilizing resources, ElastiStor steeply cuts down your storage footprint, leading to 80-90% cost savings over 3-5 years.</p>
+            <h5><span style="font-size: 12pt; font-weight: bold; color: #4169e1;">On-Demand Performance Provisioning</span>
+            </h5>
+            <p style="font-size: 12pt;">Do you still manually configure hardware to provision performance for any new application? Break the need for hardwiring storage with ElastiStor’s on-demand provisioning. Just enter the required SLA/QoS parameters and let ElastiStor automate
+                node selection and resource allocation for you. ElastiStor includes an intelligent heuristics daemon which continuously learns the quantity of various controller resources needed to deliver the required QoS.</p>
+            <h5><span style="font-size: 12pt; font-family: Arial; color: #4169e1;">vCenter-like Administration Console</span>
+            </h5>
+            <p><span style="font-size: 12pt;">ElastiStor makes managing storage as easy as managing VMs, even as you scale to hundreds of applications. Storage admins can now comprehensively manage the entire storage cluster, spanning across multiple sites, from a single web-based console. Further, ElastiStor gives you unprecedented access and control over resource usage within shared storage, right down to the application-level granularity.</span>
+            </p>
+            <h5><span style="font-size: 12pt; font-family: Arial; color: #4169e1;">REST APIs and Plugins for Easy Integration</span>
+            </h5>
+            <p><span style="font-size: 12pt;">Every action performed at ElastiStor admin console translates into a REST based API call in the backend. Using these REST APIs, admins can comprehensively provision and manage ElastiStor volumes from VMware vCenter, Citrix XenCenter, OpenStack Horizon, or any other admin portal. Our plugin for VMware vCenter allows admins to create and manage QoS-aware VMs right from vCenter console.</span>
+            </p>
+            <h5><span style="font-size: 12pt; font-family: Arial; color: #4169e1;">N-way High Availability</span>
+            </h5>
+            <p><span style="font-size: 12pt;">ElastiStor enables N-way High Availability, exponentially increasing reliability (mean time to failure), compared to the standard 2-way HA provided by existing solutions. CloudByte’s storage un-fragmentation and its patented VSM architecture make N-way HA affordable and feasible.</span>
+            </p>
+            <h5><span style="font-size: 12pt; font-family: Arial; color: #4169e1;">Delegated Administration</span>
+            </h5>
+            <p><span style="font-size: 12pt;">A much requested feature from the cloud service providers, delegated administration empowers both CSPs and its customers to monitor and control storage volumes. Management privileges vary based on the admin functionality – for example, a super admin can manage the entire storage cluster, whereas a customer admin can manage just the storage resources allotted to that particular customer.</span>
+            </p>
+            <p><span style="font-size: 12pt; font-weight: bold; color: #4169e1;">Standard storage features</span>
+            </p>
+            <p><span style="font-size: 12pt;">The following Storage features are available in CloudByte ElastiStor:</span>
+            </p>
+            <table style="width: 100%;">
+                <col style="width: 154px;" />
+                <col style="width: 200px;" />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;background-color: #dcdcdc;font-size: 9pt;">Feature</td>
+                        <td style="text-align: center;background-color: #dcdcdc;font-size: 9pt;">Description</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Scalability</td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">128-bit file system</li>
+                                <li class="tdbullist">
+
+                                    Zettabyte storage capacity</li>
+                                <li class="tdbullist">
+
+                                    Unlimited file size</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Access Protocols </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">
+
+                                    NFSv3</li>
+                                <li class="tdbullist">NFSv4</li>
+                                <li class="tdbullist">CIFS</li>
+                                <li class="tdbullist">ISCSI</li>
+                                <li class="tdbullist">FC</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Storage Connectivity
+                        </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">SAS JBODs</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Storage Resilience </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">RAID Z1</li>
+                                <li class="tdbullist"> RAID Z2</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Storage Efficiency </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">De-duplication</li>
+                                <li class="tdbullist">Compression</li>
+                                <li class="tdbullist">Thin Provisioning </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Back up</td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">Unlimited Clones</li>
+                                <li class="tdbullist">Unlimited Snapshots</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Availability </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">N-way high availability (N-way HA)</li>
+                                <li class="tdbullist">
+                                    Partial failure transfer to the available node</li>
+                                <li class="tdbullist">
+                                    Active-Active mode
+                                </li>
+                                <li class="tdbullist">HA with/without storage redundancy</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Disaster Recovery </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">Tenant level disaster recovery</li>
+                                <li class="tdbullist">
+                                    High availability across primary and DR sites</li>
+                                <li class="tdbullist">
+                                    Block level replication
+                                </li>
+                                <li class="tdbullist">Synchronous mirroring,</li>
+                                <li class="tdbullist"> Asynchronous mirroring
+                                </li>
+                                <li class="tdbullist">RPO—Last minute
+                                </li>
+                                <li class="tdbullist">RTO—Few minutes</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;font-size: 9pt;">Data Integrity </td>
+                        <td style="background-color: #f5f5f5;font-size: 9pt;">
+                            <ul>
+                                <li class="tdbullist">
+                                    Protection against silent data corruption</li>
+                                <li class="tdbullist">
+                                    Fixes corrupt block without having to take the file system offline</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note"><b>Note:</b><span style="font-size: 10pt;"> The supported capacity of ElastiStor depends on the hardware. With adequate hardware support, ElastiStor can scale up to any extents.</span>
+            </p>
+            <h3 style="color: #008000;"><span style="font-size: 14pt; font-family: 'Times New Roman';"><span style="font-family: sans-serif;color: #005db2;">How CloudByte ElastiStor is different from legacy storage solutions</span></span>
+            </h3>
+            <p><span style="font-family: Arial; font-size: 12pt;">The following table explains the major differences:</span>
+            </p>
+            <table style="width: 100%;">
+                <col style="width: 154px;" />
+                <col style="width: 200px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;background-color: #dcdcdc;">Feature</td>
+                        <td style="text-align: center;background-color: #dcdcdc;">Legacy solutions</td>
+                        <td style="text-align: center;background-color: #dcdcdc;">CloudByte ElastiStor</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;">Storage Architecture</td>
+                        <td style="background-color: #f5f5f5;">Monolithic </td>
+                        <td style="background-color: #f5f5f5;">Patented VSM Architecture</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;">Tenant Solution </td>
+                        <td style="background-color: #f5f5f5;">Only at access layers </td>
+                        <td style="background-color: #f5f5f5;">At all Storage Stack layers </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;">Full featured tenants </td>
+                        <td style="background-color: #f5f5f5;">No guaranteed QoS, delegated administration, or complete security</td>
+                        <td style="background-color: #f5f5f5;">Provides guaranteed QoS, delegated administration rights, and complete security</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;">Access to tenant-level resource usage</td>
+                        <td style="background-color: #f5f5f5;">No</td>
+                        <td style="background-color: #f5f5f5;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;background-color: #f5f5f5;">Security </td>
+                        <td style="background-color: #f5f5f5;">Limited</td>
+                        <td style="background-color: #f5f5f5;">Fully secure (complete isolation, access with encrypted key)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="color: #005db2;font-size: 14pt;font-family: sans-serif;">
+                <a name="Patented"></a><span style="font-family: 'Times New Roman';font-size: 14pt;color: #013364;">Patented VSM architecture </span>
+            </h3>
+            <p style="font-size: 12pt;">In a CloudByte Controller, each tenant is completely isolated at storage stack levels and unified as a VirtualStorage Machine (VSM). With complete isolation, VSMs can be treated as if they are allotted dedicated storage controller enabling:</p>
+            <ul>
+                <ul>
+                    <li style="font-size: 12pt;">Shared storage tenants with guaranteed QoS (IOPS, Throughput, and latency), delegated administration rights, and complete security.</li>
+                    <li style="font-size: 12pt;">Easy shared storage management with access to and control over tenant-level resource usage (disk, cache, network, and CPU).</li>
+                </ul>
+            </ul>
+            <p style="font-size: 12pt;">Together with its rich customizability and scalability, CloudByte ElastiStor offers a powerful storage virtualization solution for service providers and enterprises.</p>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

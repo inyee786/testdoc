@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="flase">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="true">Configure</a>
+                    <ul class="collapse in list-unstyled" id="Configure">
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="true">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse in list-unstyled" id="ccelasti">
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="true">Setting up data access protocols</a>
+                                    <ul class="collapse in list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px" class="active"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="font-size: 18pt;font-family: sans-serif;color: #013364;">Data access using FC </h2>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">Fiber Channel (FC) Protocol is the standard transport protocol for delivering serial SCSI commands over Fiber Channel interconnects. Fiber Channel Protocol is designed to operate in a highly-efficient manner using hardware for protocol offload
+                engines (POEs). Fiber Channel is fast, reliable, and scalable data transport system. For further details, see <a href="http://en.wikipedia.org/wiki/Fibre_Channel">http://en.wikipedia.org/wiki/Fibre_Channel</a>.</p>
+            <h3 style="font-family: sans-serif;font-size: 14pt;color: #005db2;">Supported Hardware for Fibre Channel</h3>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;">QLogic HBA is used by CloudByte as FC targets. </li>
+                <li style="font-size: 11pt;font-family: sans-serif;">The client can use any available HBAs in the market (such as Emulex or Brocade).</li>
+            </ul>
+            <p style="font-size: 11pt;font-family: sans-serif;">For more information, see the <a href="http://www.cloudbyte.com/support/HCL/">Hardware Compatibility List</a>.</p>
+            <h3 style="font-family: sans-serif;font-size: 14pt;color: #005db2;">FC in CloudByte ElastiStor</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">The following figure illustrates how you configure the FC setup in CloudByte ElastiStor:</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/confg_fc_setupi.jpg" class="FitToText" style="width: 612px;height: 381px;" />
+            </p>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Access over FC protocol involves an initiator group and a target group. Initiator represents the FC client, for example a Windows client and target is the CloudByte Node. </p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">The Storage Volumes can be accessed by both the initiator group and the target group.</p>
+            <h4 style="color: #005db2;font-family: sans-serif;font-size: 13pt;">FC Initiator group</h4>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">An initiator group is the list of initiators who are authorized to access the FC LUN. By default, CloudByte creates a default initiator group named <i>none</i> that does not allow access to any initiator.</p>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">The initiator group is a list of WWPNs. You can create the initiator group, add initiators and ports, and then mask the LUNs to the added initiator.</p>
+            <p style="font-family: sans-serif;font-size: 11pt;">You create the initiator group at the account level and assign it at the Storage Volume level.</p>
+            <h4 style="color: #005db2;font-family: sans-serif;font-size: 12pt;">FC Target group</h4>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">You group the FC target ports to form a target group. This means, all the FC target ports which you have grouped are used for this particular group. The Node’s WWPNs uniquely identify each target port on the system. By default, CloudByte creates
+                a default target group named ALL that allows access to all targets. If required, you can create a new target group and replace the default one, though CloudByte recommends using the default target group ALL.</p>
+            <p style="font-family: sans-serif;font-size: 11pt;">You create the target group at the account level and assign it at the Storage Volume level.</p>
+            <h3 style="font-family: sans-serif;color: #005db2;">Creating an initiator group</h3>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In ElastiCenter, select Accounts(Navigation Pane &gt; Accounts).</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Accounts page, select the account for which you want to specify the protocol options.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Action Icon, select Access Protocol Options &gt; Manage FC Initiator Group.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/33_Account_FC_options.jpg" class="FitToText" style="width: 720px;height: 266px;" />
+            </p>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;"> Refresh Hardware (Nodes &gt; select the specific Node&gt; click Refresh Hardware in the Tasks section).
+                    <p class="note" style="font-family: sans-serif;"><b>Note:</b> Step 4 applies only if you have added FC&#160;ports to the Node after adding the Node to the HA Groups.</p>
+                </li>
+            </ul>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the following page, click Add Initiator Group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Specify a unique name and select the appropriate WWPNs of the FC&#160;initiators to form the group. And then click ADD</li>
+            </ul>
+            <ol>
+                <li style="text-align: center;">
+                    <img src="../../Resources/Images/fc_initiator_group.png" class="FitToText" />
+                </li>
+            </ol>
+            <h3 style="font-family: sans-serif;color: #005db2;">Creating a target group</h3>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In ElastiCenter, select Accounts.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Accounts page, select the account for which you want to specify the protocol options.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Action Icon, select Access Protocol Options &gt; Manage FC Target Group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;"> Refresh Hardware (Nodes &gt; select the specific Node&gt; select Refresh Hardware in the Tasks section of the task list).
+                    <p class="note" style="font-family: sans-serif;"><b>Note:</b> Step 4 applies only if you have added FC&#160;ports to the Node after adding the Node to the HA Groups.</p>
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the following page, click Add Target Group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Specify a unique name and WWPNs to form the group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Add.</li>
+            </ol>
+            <h3 style="font-family: sans-serif;color: #005db2;">Assigning Storage Volume to initiator group and target group</h3>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Storage Volumes page, select the Storage Volume for which you want to assign the initiator/target group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Action Icon, select Tasks &gt; Manage FC Configuration.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the FC Configuration page, click Edit and then replace the default initiator group/target group.</li>
+                <li style="font-family: sans-serif; font-size: 11pt;">Click Save.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/manage_fc_configuration_editsettings_2.png" class="FitToText" />
+            </p>
+            <blockquote>
+                <p class="note" style="text-align: justify;font-family: sans-serif;"><b>Note:</b>You can also perform the same task at the Account level (Accounts &gt; select Account &gt; Manage FC Initiator Group/Target Group).</p>
+            </blockquote>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

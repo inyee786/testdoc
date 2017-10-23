@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="flase">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="true">Configure</a>
+                    <ul class="collapse in list-unstyled" id="Configure">
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="true">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse in list-unstyled" id="ccelasti">
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="true">Setting up data access protocols</a>
+                                    <ul class="collapse in list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px" class="active"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="../../D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="color: #013364;font-family: sans-serif;font-size: 18pt;">Data access using CIFS</h2>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">The Common Internet File System (CIFS), is a network protocol whose most common use is sharing files on a Local Area Network(LAN).</p>
+            <p style="font-size: 11pt;font-family: sans-serif;">The following workflow explains how to configure CIFS options:</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/configuringCIFSprotocolOptions1.png" class="FitToText" style="width: 584px;height: 250px;" />
+            </p>
+            <p style="font-family: sans-serif;font-size: 11pt;">Configure VSM CIFS options at the VSM level. File system CIFS options can be configured at the Storage Volume level (if you have enabled the protocol option).</p>
+            <h3 style="font-family: sans-serif;font-size: 14pt;color: #005db2;">VSM CIFS options</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">By default, CloudByte ElastiStor creates a default VSM CIFS options group with industry standard options.</p>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;"> After you create the VSM, Manage CIFS Configuration option can be used to manage CIFS options at VSM level. You can either select the default one or select options from the drop down menu.</p>
+            <table>
+                <col style="width: 125px;" />
+                <col style="width: 556px;" />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;background-color: #808080;color: #ffffff;">Field</td>
+                        <td style="text-align: center;background-color: #808080;color: #ffffff;"> Description</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Authentication Model</td>
+                        <td style="background-color: #dcdcdc;"> By default the Authentication Model is user.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">NetBios Name</td>
+                        <td style="background-color: #dcdcdc;"> A unique name for the VSM CIFS options template.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Server Description</td>
+                        <td style="background-color: #dcdcdc;"> A meaningful description of the VSM CIFS options template.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Workgroup
+                        </td>
+                        <td style="background-color: #dcdcdc;"> The workgroup that the server will appear to be in.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">DOS Charset</td>
+                        <td style="background-color: #dcdcdc;"> The character set that is used while communicating with the Windows clients. The default is CP437</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">UNIX Charset</td>
+                        <td style="background-color: #dcdcdc;"> The character set that is internally used. The default is UTF-8.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Log Level</td>
+                        <td style="background-color: #dcdcdc;"> Sets the amount of log/debug messages that are sent to the log file. Default is Minimum. Keep it this way for best performance unless more information is needed for troubleshooting.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Time Server</td>
+                        <td style="background-color: #dcdcdc;"> Determines whether or not ElastiStor advertises itself as a time server to Windows clients.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="font-family: sans-serif;color: #005db2;">File system CIFS options</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;"> By default, CloudByte ElastiStor creates a default file system CIFS options group with industry standard options. After you create the Storage Volume, Manage CIFS Configuration option can be used to manage CIFS options at Storage Volume level.</p>
+            <table>
+                <col style="width: 104px;" />
+                <col style="width: 894px;" />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;color: #ffffff;background-color: #808080;">Option</td>
+                        <td style="text-align: center;color: #ffffff;background-color: #808080;">Description</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Status</td>
+                        <td style="background-color: #dcdcdc;"> If Enabled, CIFS Share can be accessed. If NFS is enabled on a Storage Volume, you can access CIFS share by setting Status to <code>enable</code>.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Name</td>
+                        <td style="background-color: #dcdcdc;"> A unique name for the file system CIFS options template.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Description</td>
+                        <td style="background-color: #dcdcdc;"> A meaningful description of the CIFS options template.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Read Only</td>
+                        <td style="background-color: #dcdcdc;"> If checked, prohibits write access to the share.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">
+                            <p>Browseable</p>
+                        </td>
+                        <td style="background-color: #dcdcdc;"> If selected, clients when they browse the shared directory using Windows Explorer can see the list of shares. If unselected, client has to explicitly specify the full server path in Windows Explorer.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Inherit Permissions</td>
+                        <td style="background-color: #dcdcdc;"> If selected, permissions on new files and directories are inherited from parent directory.This option is (particularly) helpful in scenarios where there are large systems with many users involved. Inheriting permissions let a single
+                            home share to be used flexibly by each user. Leave this unselected if Type of ACL is set to Windows in the Volume's permissions.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Recycle Bin</td>
+                        <td style="background-color: #dcdcdc;">If selected, instead of purging the files, they are moved to recycle bin of CIFS share on deletion.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Hide Dot Files</td>
+                        <td style="background-color: #dcdcdc;"> Dot files (unlike on UNIX) appear on Windows. Select the option to hide the Dot files.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Hosts Allow</td>
+                        <td style="background-color: #dcdcdc;"> Host-based protection feature. Comma-separated or space separated list of IP addresses that are allowed to access the shares. If nothing is specified, the default value ALL applies.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #dcdcdc;">Hosts Deny</td>
+                        <td style="background-color: #dcdcdc;"> Host-based protection feature. Comma-separated or space separated list of IP addresses that are denied access to the file system. If you specify ALL, IP Addresses that are not listed in the Host Allow field are denied permission.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="font-family: sans-serif;color: #005db2;">CIFS&#160;authentication workflow </h3>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">A CIFS Authentication Group is a grouping of multiple CIFS users. You can select the users who can access the CIFS share. </p>
+            <ol start="1">
+                <li style="font-family: sans-serif;font-size: 11pt;">In the ElastiCenter, select Accounts (Navigation pane &gt; Accounts).</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Accounts page, select the account for which you want to specify the protocol options.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Select Manage CIFS Authentication Groups in the Actions Icon.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/33_Account_CIFS_options.jpg" class="FitToText" style="width: 701px;height: 255px;" />
+            </p>
+            <ul start="1">
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Add Authentication Group in the following page:</li>
+                <p style="text-align: center;">
+                    <img src="../../Resources/Images/34_add_cifs_authentication_grpups.jpg" class="FitToText" style="width: 674px;height: 265px;" />
+                </p>
+                <li style="font-family: sans-serif;font-size: 11pt;">Specify the required details and then click OK.</li>
+                <table>
+                    <col style="width: 178px;" />
+                    <col style="width: 783px;" />
+                    <tbody>
+                        <tr>
+                            <td style="color: #ffffff;background-color: #808080;">Field </td>
+                            <td style="color: #ffffff;background-color: #808080;">Description </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #dcdcdc;">Name</td>
+                            <td style="background-color: #dcdcdc;"> A unique name for the authentication group.</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #dcdcdc;">Description </td>
+                            <td style="background-color: #dcdcdc;"> A meaningful description for the authentication group.</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #dcdcdc;">User name </td>
+                            <td style="background-color: #dcdcdc;">Specify a name for the user.</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #dcdcdc;">Password </td>
+                            <td style="background-color: #dcdcdc;">Specify a password for the user.</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #dcdcdc;">Full name</td>
+                            <td style="background-color: #dcdcdc;">Specify the full name of the user.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the VSM page, select the VSM for which you want to assign the authentication group.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Select Manage CIFS Configuration (Actions Icon &gt; Tasks).</li>
+                <p style="text-align: center;">
+                    <img src="../../Resources/Images/35_manage_cifs_authentication_group.jpg" class="FitToText" style="width: 738px;height: 259px;" />
+                </p>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Edit, select a Discovery Authentication Group from the drop-down list and then click Save.</li>
+                <p style="text-align: center;">
+                    <img src="../../Resources/Images/36_assign_cifs_authentication_groups.jpg" class="FitToText" style="width: 680px;height: 283px;" />
+                </p>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the confirmation prompt, click Modify.</li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

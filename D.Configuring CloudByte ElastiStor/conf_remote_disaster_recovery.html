@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="false">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="true">Configure</a>
+                    <ul class="collapse in list-unstyled" id="Configure">
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="true">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse in list-unstyled" id="ccelasti">
+                                <li><a href="../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="false">Setting up data access protocols</a>
+                                    <ul class="collapse list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li class="active"><a href="../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="color: #013364;font-family: sans-serif;font-size: 18pt;">Configuring remote disaster recovery</h2>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">The disaster recovery mechanism in CloudByte ElastiStor helps you effectively retrieve data in disaster situations. Currently, ElastiStor supports disaster recovery for a single Site. You can rebuild a primary Site using the disaster recovery
+                copy. ElastiStor provides disaster recovery across Sites over WANs.</p>
+            <h3 style="font-weight: bold;font-family: sans-serif;font-size: 14pt;color: #005db2;">Setting up remote disaster recovery</h3>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the ElastiCenter navigation pane, click Virtual Storage Machines.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">From the list of VSMs, select the one for which remote disaster recovery has to be configured.</li>
+                <li style="font-size: 11pt;font-family: sans-serif;">In the actions Icon, click Create DR VSM in Remote Backup.</li>
+            </ol>
+            <p class="note"> <b>Note:</b> You have this option only if you have not created a DR&#160;VSM. If a DR&#160;VSM is created, you can modify the settings.</p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/56_Create_DR.jpg" class="FitToText" style="width: 708px;height: 256px;" /> </p>
+            <ol MadCap:continue="true">
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Add DR&#160;VSM page,
+                    <ol MadCap:continue="true">
+                        <li style="font-family: sans-serif;">Select the Site on which you want to configure the DR VSM.</li>
+                        <li style="font-family: sans-serif;">Specify a name for the DR VSM.</li>
+                        <li style="font-family: sans-serif;">Click Next.</li>
+                    </ol>
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the following page, select a Pool and then click Next.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Select the Backup interface, IP Address, and specify a schedule for the DR VSM (in the format minutes/hours/days/month/year).</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Add.</li>
+            </ol>
+            <p style="font-family: sans-serif;font-size: 11pt;">A message appears to confirm that the DR VSM has been added.</p>
+            <h3 style="color: #005db2;font-family: sans-serif;font-size: 14pt;">Managing remote disaster recovery</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">For a specific VSM, use the Remote Backup section in the actions pane to configure remote disaster recovery.</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the ElastiCenter navigation pane, click Virtual Storage Machines.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">From the list, select the VSM to manage remote disaster recovery.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the actions icon, use the options in the section Remote Backup.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/57_Manage_DR.jpg" class="FitToText" style="width: 656px;height: 237px;" />
+            </p>
+            <h4 style="font-family: sans-serif;font-size: 12pt;color: #005db2;">Disaster recovery options</h4>
+            <ul style="list-style-type: square;">
+                <li style="font-family: sans-serif;font-size: 11pt;"><b>Name</b>: Provides details of DR&#160;VSM and displays the transfer details.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;"><b>Disable Transfer</b>: Select and confirm to disable disaster recovery.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;"><b>Edit Schedule</b>: Edit the disaster recovery schedule.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;"><b>Delete DR&#160;VSM</b>: Remove a disaster recovery setup that you have configured.</li>
+            </ul>
+            <h3 style="color: #005db2;font-family: sans-serif;font-size: 12pt;">Recovering data</h3>
+            <p class="note" style="font-family: sans-serif;"><b>Note</b>: The DR VSM can be activated only after the base snapshot is successfully transferred from the primary VSM. You can check the status of data transfer by clicking View Transfer Status (Actions icon &gt; Tasks).</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the ElastiCenter navigation pane, click Virtual Storage Machines.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">From the list of VSMs, select the DR VSM that is associated with the Primary VSM where the disaster occurred.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the DR VSM page, go to actions icon and then click Tasks &gt; Activate.
+                </li>
+                <p style="text-align: center;">
+                    <img src="../Resources/Images/58_Activate_DR.jpg" class="FitToText" style="width: 684px;height: 244px;" />
+                </p>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the following page, specify the network settings of the DR VSM and then click OK.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">At confirmation prompt, click Yes.</li>
+            </ol>
+            <p style="font-family: sans-serif;font-size: 11pt;">After you activate the DR VSM, the re-mount prompt appears. Ensure that you re-mount the Storage Volumes before you proceed. For details, see
+                <MadCap:xref href="../F.Mapping/deployment_scenarios.htm">"Connecting to ElastiStor"</MadCap:xref>.</p>
+            <h2 style="color: #005db2;font-family: sans-serif;font-size: 14pt;">Upgrading a High Availability DR setup</h2>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Follow the procedures to seamlessly upgrade a High Availability disaster recovery environment. Node 1 and Node 2 imply the nodes on primary cluster. Similarly, DR Node 1 and DR Node 2 imply the nodes on the secondary cluster:</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Upgrade ElastiCenter. For details, see
+                    <MadCap:xref href="../B.Installing CloudByte ElastiStor/Upgrade.htm">"Upgrading to CloudByte ElastiStor 1.4 Patch 3".</MadCap:xref>
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Move the Node 1 to maintenance mode. For details, see
+                    <MadCap:xref href="conf_high_availability.htm">"Configuring High Availability"</MadCap:xref>. </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Upgrade Node 1. For details, see
+                    <MadCap:xref href="../B.Installing CloudByte ElastiStor/Upgrade.htm">"Upgrading to CloudByte ElastiStor 1.4 Patch 3".</MadCap:xref>
+                    <![CDATA[ ]]>
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Bring the Node 1 to Available mode. For details, see
+                    <MadCap:xref href="conf_high_availability.htm">"Configuring High Availability"</MadCap:xref>. </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Move the Node 2 to Maintenance mode. </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Upgrade Node 2.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Bring the Node 2 to Available mode.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Move the DR Node 1 to Maintenance mode.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Upgrade DR Node 1.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Bring the DR Node 1 to Available mode.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Move the DR Node 2 to Maintenance mode.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Upgrade DR Node 2.
+                </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">
+                    Bring the DR Node 2 to Available mode.
+                </li>
+            </ol>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;"> Confirm if the DR Transfer occurs after the upgrade as scheduled. In the case of any exceptions, contact CloudByte Technical Support.</p>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

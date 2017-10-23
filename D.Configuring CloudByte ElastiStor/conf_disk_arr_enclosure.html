@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="false">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="true">Configure</a>
+                    <ul class="collapse in list-unstyled" id="Configure">
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="true">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse in list-unstyled" id="ccelasti">
+                                <li><a href="../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li class="active"><a href="../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="false">Setting up data access protocols</a>
+                                    <ul class="collapse list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="font-family: sans-serif;font-size: 18pt;color: #013364;">Configuring Disk Array enclosure</h2>
+            <p style="font-family: sans-serif;font-size: 11pt;">After you add Node, you are redirected to the Node page. When there is no Disk Array attached to the Node, the following page appears. Ensure that you attach a Disk Array to the Node and then click Refresh Hardware. </p>
+            <p class="note" style="font-family: sans-serif;font-size: 10pt;"><b>Note:</b> When you attach a new Disk Array to a Node, click Refresh Storage/Refresh Hardware to make the Disk Array visible on the ElastiCenter. </p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/Disk_Array_Enclosure.png" class="FitToText" style="width: 702px;height: 328px;" />
+            </p>
+            <p style="font-family: sans-serif;font-size: 11pt;">To configure a newly attached Disk Array enclosure, follow the procedures:</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">In the Node page, click the image in the section Shared Storage.</li>
+                <p style="text-align: center;">
+                    <img src="../Resources/Images/DA1.png" class="FitToText" />
+                </p>
+            </ol>
+            <blockquote>
+                <p style="font-family: sans-serif;font-size: 11pt;">The following screen appears:</p>
+            </blockquote>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/DA2.png" class="FitToText" style="width: 717px;height: 296px;" />
+            </p>
+            <ol MadCap:continue="true">
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Configure A New Disk Array. The Disk Array Configuration page appears:</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/DA3.png" class="FitToText" style="width: 715px;height: 345px;" />
+            </p>
+            <ol MadCap:continue="true">
+                <li style="font-family: sans-serif;font-size: 11pt;">Specify the Name, Bay Alignment, Number of columns and Number of Rows. For details, see the
+                    <MadCap:xref href="#Configuration">"Configuration details"</MadCap:xref>.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Next and then do the following:
+                    <ul>
+                        <li style="font-family: sans-serif;font-size: 11pt;">Click the option under the column Blink. For details, see
+                            <MadCap:xref href="#SCSI">"SCSI Enclosure Service&#160;"</MadCap:xref>.</li>
+                        <li style="font-family: sans-serif;font-size: 11pt;">Specify the bay location for the disks from the drop down list under the column Bay.</li>
+                    </ul>
+                </li>
+                <p>
+                    <img src="../Resources/Images/DA4.png" class="FitToText" />
+                </p>
+            </ol>
+            <ol MadCap:continue="true">
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Apply. On successful configuration, the Node page appears with a representation of the shared storage:
+                </li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/disk_array_enclosure_configuring.png" class="FitToText" />
+            </p>
+            <p class="note" style="font-family: sans-serif;"><b>Note:</b>You can also partially configure a Disk Array Enclosure. Suppose you have 12 disks, you can initially configure around 8 disks and other 4 disks can be configured as per the requirement.</p>
+            <h3 style="font-family: sans-serif;font-size: 15pt;">
+                <a name="Configuration"></a>Configuration details</h3>
+            <h5 style="font-family: sans-serif;font-size: 11.8pt;color: #005db2;">Horizontal and vertical alignments</h5>
+            <p style="font-family: sans-serif;font-size: 11pt;">The Disk Arrays can be idealized either in terms of horizontal or vertical alignments. The following figure represents a vertical alignment:</p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/JBod-VerticalAlignment.png" />
+            </p>
+            <p style="font-family: sans-serif;font-size: 11pt;">The following figure represents a horizontal alignment:</p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/JBod-Horizontal.png" />
+            </p>
+            <h5 style="font-family: sans-serif;font-size: 11.8pt;">Slots per row</h5>
+            <p>Slots per row is the number of disks each row can accommodate. For example, three slots per row implies that a single row can accommodate three disks.</p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/JBod-SingleRow.png" style="width: 272px;height: 112px;" />
+            </p>
+            <h3 style="font-family: sans-serif;font-size: 14pt;color: #005db2;">
+                <a name="SCSI"></a>SCSI Enclosure Service&#160;</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">SCSI Enclosure Service (SES) helps monitor the status of each device in a disk array enclosure such as disk slots, fans, heat sinks, or power supplies. </p>
+            <p style="font-family: sans-serif;font-size: 11pt;">The service helps you</p>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;">Identify a disk or verify the slot in which the disk is located.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Locate and disable a faulty disk. </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">With specific and general alerts on enclosure components.</li>
+            </ul>
+            <h4 style="font-family: sans-serif;font-size: 13pt;color: #005db2;">Blink identification</h4>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">Blink identification LED on the disk slot of a disk array. When you click Blink, at the physical location of the disks, the identification LED in the specified disk slot blinks. If the disk is not in the SCSI enclosure, the LED blink does
+                not occur. If the disk is in the SCSI enclosure and still if the blink does not occur, verify the health of the disk.</p>
+            <h4 style="font-size: 13pt;color: #005db2;">Enclosure component alerts</h4>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">CloudByte ElastiStor provides common and specific alerts for the enclosure components such as disk slots, power supplies, voltage sensors, current sensors, temperature sensors, fans, and audible alarm. The common alerts which apply to all
+                components include the ones related to</p>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;">Removal and installation of the component </li>
+                <li style="font-family: sans-serif;font-size: 11pt;">State in which the component is, such as critical, non-critical, OK, or unrecoverable</li>
+            </ul>
+            <p style="font-family: sans-serif;font-size: 11pt;">Specific alerts are generated for the following enclosure components: power supply, voltage sensor, current sensor, and temperature sensor.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">By default, CloudByte sends alerts over mail to the email you specified when you updated your profile the first time you logged in to CloudByte ElastiCenter. To expand the mailing list, add the IDs separated by comma in the Global settings
+                (Information Pane &gt; Admin &gt; Global Settings &gt; alert.email.addresses).</p>
+            <p style="font-size: 11pt;font-family: sans-serif;">To view alerts in CloudByte ElastiCenter, click Alerts in the information pane.</p>
+            <h3 style="font-family: sans-serif;color: #005db2;">Deleting a Disk Array</h3>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">Delete all Pools in the Disk Array.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;"> In the HA Groups page, select the HA group from which Disk Array has to be deleted.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">For the Disk Array to be deleted, click Manage Disk Array and then click the delete icon.</li>
+            </ol>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ElastiStor | Documentation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.cloudbyte.com/"><img src="../style/images/blue-logo.png" height="40px" width="auto"></a>
+                <h3>Elastistor Documentation</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Select ElastiStor Version</p>
+                <center>
+                    <select style="text-align:center;width:80%;text-align:center;">
+                    <option value="v14">1.4X</option>
+                    <option value="v20">2.0x</option>
+                    <option value="v22">2.2X</option>
+                </select>
+                </center>
+                <li>
+                    <a href="#g-Started" data-toggle="collapse" aria-expanded="false">Getting Started</a>
+                    <ul class="collapse list-unstyled" id="g-Started">
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_install_overview.html">CloudByte ElastiStor overview</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_feature_highlights.html">CloudByte ElastiStor feature highlights</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_physical_storage_infra.html">Physical storage infrastructure</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/cb_es_hardware_conf.html">Simple hardware configuration of ElastiStor</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Hardware Compatibility List.html">Hardware Compatibility List</a></li>
+                        <li><a href="../A.Introduction to ElastiStor 2.2/Host interoperability.html">Host Interoperability</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#install" data-toggle="collapse" aria-expanded="false">Install</a>
+                    <ul class="collapse list-unstyled" id="install">
+                        <li><a href="#">Installation overview</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/plan_installation.html">Planning your installation</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/system_requirements.html">System requirements</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_options.html">Installation options</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_ec.html">Installing ElastiCenter</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_cb_node.html">Installing Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/install_ec_and_node.html">Installing Both ElastiCenter and Node</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/">Installation on CloudByte ElastiStor Appliance</a></li>
+                        <li><a href="../B.Installing CloudByte ElastiStor/upgrade_patch_ec_ha.html">Upgrading CloudByte ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Configure" data-toggle="collapse" aria-expanded="true">Configure</a>
+                    <ul class="collapse in list-unstyled" id="Configure">
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter, ElastiStor’s management console</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Launching CloudByte ElastiCenter</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">ElastiCenter User Interface</a></li>
+                        <li><a href="../D.Configuring CloudByte ElastiStor/">Network configuration details</a></li>
+                        <li>
+                            <a href="#ccelasti" data-toggle="collapse" aria-expanded="true">Configuring CloudByte ElastiStor</a>
+                            <ul class="collapse in list-unstyled" id="ccelasti">
+                                <li><a href="../D.Configuring CloudByte ElastiStor/set_up_storage.html">Setting up your storage</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_site.html">Creating a Site</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_ha_group.html">Creating an HA Group</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/add_node.html">Adding a Node</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_disk_arr_enclosure.html">Configuring Disk Array Enclosure</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_high_availability.html">Configuring High Availability</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Configuring interfaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_stor_pool.html">Creating a Pool</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Configuring grace.html">Configuring grace</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/create_account.html">Creating an Account</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Provisioning a VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Assigning Real IP spaces.html">Assigning Real IP Spaces</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Provision storage.html">Provisioning storage</a></li>
+                                <li>
+                                    <a href="#sudaprotocol" data-toggle="collapse" aria-expanded="false">Setting up data access protocols</a>
+                                    <ul class="collapse list-unstyled" id="sudaprotocol">
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_iscsi.html">Data access using iSCSI</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_cifs.html">Data access using CIFS</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_fc.html">Data access using FC</a></li>
+                                        <li style="padding-left: 20px"><a href="D.Configuring CloudByte ElastiStor/K.Setting up data access protocols/conf_data_access_nfs.html">Data access using NFS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_vsm_migration.html">Configuring VSM migration</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/provision_vsm.html">Choosing a Pool to provision VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/modify_qos_stor_capacity.html">Modifying QoS after provisioning VSM</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_local_backup.html">Configuring local backup</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/conf_remote_disaster_recovery.html">Configuring remote disaster recovery</a></li>
+                                <li class="active"><a href="../D.Configuring CloudByte ElastiStor/assuring_qos.html">Assuring Quality of Service</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/">Promoting secondary ElastiCenter and backing up configurations</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Enabling_Space_Reclamation.html">Enabling Space Reclamation</a></li>
+                                <li><a href="../D.Configuring CloudByte ElastiStor/Backing_up_interface.html">Backing Up Interfaces</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#manage" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="manage">
+                        <li><a href="../E.Managing CloudByte ElastiStor//delegated_admin.html">Delegated administration</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/monitoring.html">Monitoring</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/drill_down_feature.html">Drill-down Features</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/global_settings.html">Global settings</a></li>
+                        <li><a href="../E.Managing CloudByte ElastiStor/Setting up LDAP authentication for Elastistor.html">Setting up LDAP authentication for ElastiStor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#mapping" data-toggle="collapse" aria-expanded="false">Mapping</a>
+                    <ul class="collapse list-unstyled" id="mapping">
+                        <li><a href="../F.Mapping/map_cifs_share.html">Mapping CIFS share to clients</a></li>
+                        <li><a href="../F.Mapping/map_fc_lun.html">Mapping FC LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_iscsi_lun.html">Mapping iSCSI LUN to the clients</a></li>
+                        <li><a href="../F.Mapping/map_nfs_share.html">Mapping NFS share to clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../H.Licensing/">Licensing</a>
+                    <a href="#rApis" data-toggle="collapse" aria-expanded="false">REST APIs</a>
+                    <ul class="collapse list-unstyled" id="rApis">
+                        <li><a href="../G.API References/using REST APIs.html">Using the REST APIs</a></li>
+                        <li><a href="../http://www.cloudbyte.com/elastistorapi/TOC_Root_Admin.html">API Reference</a></li>
+                        <li><a href="../G.API References/API examples(2).html">REST API use cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plug-ins" data-toggle="collapse" aria-expanded="false">Plug-ins</a>
+                    <ul class="collapse list-unstyled" id="plug-ins">
+                        <li><a href="#">CloudByte ElastiStor plug-in for Apache CloudStack</a></li>
+                        <li><a href="#">CloudByte ElastiStor Recovery Manager for SQL Server (RMSQL) plug-in</a></li>
+                        <li><a href="#">CloudByte ElastiStor integration with OpenStack Glance</a></li>
+                    </ul>
+                </li>
+
+                <li>
+
+                    <a href="#trFaqs" data-toggle="collapse" aria-expanded="false">TroubleShooting & FAQs</a>
+                    <ul class="collapse list-unstyled" id="trFaqs">
+                        <li><a href="#">CloudByte Elastistor Product FAQs</a></li>
+                        <li><a href="#">Installation FAQs</a></li>
+                        <li><a href="#">Pool FAQs</a></li>
+                        <li><a href="#">Access protocol FAQs</a></li>
+                        <li><a href="#">Storage Volume FAQs</a></li>
+                        <li><a href="#">High Availability FAQs</a></li>
+                        <li><a href="#">SAS multipathing</a></li>
+                        <li><a href="#">Troubleshooting ElastiCenter HA</a></li>
+                        <li><a href="#">IOPS conversion matrix</a></li>
+                        <li><a href="#">CloudByte ElastiStor best practices</a></li>
+                        <li><a href="#">Backing up ElastiCenter configurations</a></li>
+                        <li><a href="#">Collecting the data center logs</a></li>
+                        <li><a href="#">VSM Webshell terminal on ElastiCenter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kbArticles" data-toggle="collapse" aria-expanded="false">Knowledge Base Articles</a>
+                    <ul class="collapse list-unstyled" id="kbArticles">
+                        <li><a href="#">Enabling out of band communication between Nodes in an HA Group</a></li>
+                        <li><a href="#">Restore snapshots while mapping CIFS share (on Windows) </a></li>
+                        <li><a href="#">Understanding ElastiStor and ElastiCenter Logs</a></li>
+                        <li><a href="#">Configuring high availability on virtual machines</a></li>
+                        <li><a href="#">Configuring Device-Mapper Multipath on Linux</a></li>
+                        <li><a href="#">Configuring hardware RAID</a></li>
+                        <li><a href="#">Implications of using 4K Sector Size ZFS Pools</a></li>
+                        <li><a href="#">Configuring iDRAC Settings on Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Optimizing the boot time for Dell PowerEdge R720/Dell PowerEdge R820</a></li>
+                        <li><a href="#">Customizing disk timeout values for HA Settings on Various Operating Systems</a></li>
+                        <li><a href="#">Restore snapshots while mapping FC LUNs (on ESX)</a></li>
+                        <li><a href="#">Restore Snapshots while mapping FC LUNs (on Windows Server 2008)</a></li>
+                        <li><a href="#">Moving your CloudByte ESA to a new network environment</a></li>
+                        <li><a href="#">Resizing iSCSI LUNs on Linux Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="http://www.cloudbyte.com/cbftp/CloudByte%20ECP%20Study%20Guide.pdf" class="download">Training Guide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2 style="color: #013364;font-family: sans-serif;font-size: 18pt;">Assuring Quality of Service</h2>
+            <h3 style="color: #005db2;font-size: 15pt;font-family: sans-serif;">Introduction</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">Assuring quality of service makes your storage performance predictable. CloudByte ElastiStor is unique in its QoS offering as it lets you</p>
+            <ul style="list-style-type: square;">
+                <li style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Easily commission storage with guaranteed IOPS at various levels. You can decide to configure QoS at a Pool level, VSM level, or Storage Volume level.</li>
+                <li style="text-align: justify;font-family: sans-serif;font-size: 11pt;">Configure multidimensional QoS involving IOPS, throughput, latency, and capacity.</li>
+                <li style="text-align: justify;font-size: 11pt;font-family: sans-serif;">Utilize untapped system resources. For example, assume that you have three VSMs but only one is active. In this case, the active VSM can use the entire system’s capability.</li>
+                <li style="text-align: justify;font-family: sans-serif;font-size: 11pt;">On-demand modification of settings without system restarts.</li>
+            </ul>
+            <h3 style="color: #005db2;font-family: sans-serif;font-size: 14pt;">Choosing your QoS</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">The following points help you choose an appropriate QoS:</p>
+            <p style="font-family: sans-serif;font-size: 11pt;"><b>Endpoint</b>: Decide at what level you want to implement QoS.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Select a capable pool</b>: Based on VSM’s requirements, you provision it on a capable Pool that can meet the requirements. Define the pool level QoS, based on Pool configuration and the controller level. QoS is determined based on the Pool
+                capacity, which is the underlying storage capability.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>QoS provisioning</b>: Understand your VSM’s QoS requirements across the data access and data protection needs. Based on the requirement of the VSM, you can either choose QoS automatically or manually. Ensure that you are aware of the Pool
+                settings and how effectively you want to use it at the VSM level.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Sub-divide QoS</b>: Within a VSM, based on varying needs, further sub-divide QoS across Storage Volume, based on the guarantee that the administrator wants to set. For example, when a VSM is used to store logs in the database, since logs
+                need higher IOPS and lower throughput and latency, set it accordingly. Whereas a database requires low IOPS, high throughput, and high latency.</p>
+            <h3 style="color: #005db2;font-family: sans-serif;font-size: 14pt;">Configuration</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">Use ElastiCenter to configure QoS settings. The configuration can be at the following levels:</p>
+            <ul style="list-style-type: square;">
+                <li style="font-family: sans-serif;font-size: 11pt;">Pool: For details, see
+                    <MadCap:xref href="create_stor_pool.htm" style="color: #008000;">Creating a Storage pool</MadCap:xref>.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Account: For details, see
+                    <MadCap:xref href="create_account.htm" style="font-family: sans-serif;font-size: 11pt;color: #008000;">Creating an Account</MadCap:xref>.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">VSM: For details, see
+                    <MadCap:xref href="provision_vsm.htm" style="color: #008000;">Provisioning VSM</MadCap:xref>.</li>
+            </ul>
+            <h3 style="font-family: sans-serif;color: #005db2;font-size: 14pt;">Configuring Grace</h3>
+            <h4 style="font-family: sans-serif;color: #005db2;font-size: 12pt;">What is Grace</h4>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Grace is the provisioning of unused IOPS/throughput of Pools to Storage Volumes based on the performance requirements. You can configure Grace at Pool level and Storage Volume level.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">For example, assume that you have a Pool with the capacity of 100 IOPS and Grace enabled. Two VSMs named VSM A and VSM B, with a capacity of 30 IOPS and 60 IOPS respectively are created under the Pool.
+            </p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/Configuring_grace_diagram.png" class="FitToText" />
+            </p>
+            <ul>
+                <li style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Under VSM A (with 30 IOPS capacity), Storage Volumes named E and F are created, and assigned 10 IOPS and 15 IOPS respectively. </li>
+                <li style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Under VSM B (with 60 IOPS capacity), Storage Volume G is created and assigned 35 IOPS.</li>
+                <li style="text-align: justify;font-family: sans-serif;font-size: 11pt;">The grace available in this scenario is 40 IOPS.</li>
+            </ul>
+            <h3 style="font-family: sans-serif;color: #005db2;">
+                <a name="GracePool"></a>Configuring Grace at the Pool level</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">Grace is enabled by default at the Pool level. You can edit Grace after creating the Pool. </p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;">To edit,</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">Go to the Pool page and then in the actions icon, click Settings.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Edit and then choose to enable/disable Grace.</li>
+            </ol>
+            <h3 style="font-family: sans-serif;">Configuring Grace at the Storage Volume level</h3>
+            <p style="font-family: sans-serif;font-size: 11pt;">To enable Grace at the Storage Volume level, ensure that Grace is enabled at the respective Pool level.</p>
+            <p style="font-family: sans-serif;font-size: 11pt;">To edit,</p>
+            <ol>
+                <li style="font-family: sans-serif;font-size: 11pt;">Go to the Storage Volume page and then in the actions icon, click Settings.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Edit and then choose to enable/disable Grace.</li>
+                <li style="font-family: sans-serif;font-size: 11pt;">Click Save.</li>
+            </ol>
+            <h2 style="color: #013364;font-family: sans-serif;">Monitoring QoS</h2>
+            <p style="font-family: sans-serif;font-size: 11pt;">In the Storage Volume page, select the Volume for which you want to monitor QoS. The page that appears displays the monitoring data.</p>
+            <h2 style="color: #013364;font-family: sans-serif;">QoS&#160;tips</h2>
+            <h3 style="font-family: sans-serif;color: #005db2;">Storage capacity</h3>
+            <h4 style="font-family: sans-serif;color: #005db2;font-weight: normal;">Discs, storage connectivity, and type</h4>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;"><b>Capability</b>: Ensure that you are well aware of the capabilities of your storage subsystem. For example, the right interconnection between the controller and storage, the type of disks on the disk array, and the ability to expand the
+                capacity.
+            </p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Limitations</b>: Ensure that you have assessed the limitations. For example, increasing storage capacity does not make any sense if the network does not support.</p>
+            <h4 style="font-family: sans-serif;font-size: 13pt;color: #005db2;">Controller characteristics</h4>
+            <h5 style="font-family: sans-serif;font-size: 10.8pt;font-weight: normal;">RAM, CPU, and Network:</h5>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>CPU</b>: If the storage is more I/O bound than CPU bound, it is more effective. CPU load should not be more than 60-70 percent, or you add more cores.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>RAM</b>: RAM determines the ability to cache. Larger RAM means more filesystem caches. In a READ-centric scenario, larger RAM helps generate better QOS. That is, more I/O and throughput but lesser latency.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Network</b>: Network capacity decides data access and data protection. Assure adequate network bandwidth to export performance to clients. Network should do justice to the storage system.</p>
+            <p><b>Segregation</b>: Segregate data access and data protection so that protection workloads do not interfere with data access workloads.</p>
+            <h3 style="font-family: sans-serif;color: #005db2;">Pool creation</h3>
+            <h4 style="color: #005db2;font-family: sans-serif;">Storage group tips</h4>
+            <p style="font-family: sans-serif;font-size: 11pt;text-align: justify;">As a best practice, create storage with 8 to 10 disks. When you add storage groups, keep them identical. For example, do not add disparate groups to the same Pool. For example, if one group has SATA disks and another group has SAS disks, then
+                do not assign both to the same Pool. That is, do not create hybrid Pools.</p>
+            <h4 style="font-family: sans-serif;color: #005db2;">Multiple Pools within a Controller</h4>
+            <p style="text-align: justify;font-size: 11pt;font-family: sans-serif;"><b>Tips to avoid contention points</b>: Be judicious when you add multiple Pools to a controller. For example, it does not make sense if network bandwidth is already utilized to the maximum with the existing Pools, or CPUs are already busy
+                serving the existing Pools. QoS also suffers because of over provisioning.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>When to combine multiple pools:</b> When no conflict pertaining to bandwidth, CPU, or Memory exist, you can combine Pools.</p>
+            <h3 style="color: #005db2;font-family: sans-serif;">Optimizing QoS</h3>
+            <p style="text-align: justify;font-size: 11pt;font-family: sans-serif;"><b style="font-family: sans-serif;font-size: 11pt;">Disk characteristics</b>: Better the disk characteristics, better the QOS. For example, the IOPS, throughput, and latency of SATA disks are not as good as that of SS disks.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Disk layout</b>: Better the disk layout, better the QoS. For example, keep the disk layout to 8 to 10 disks.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Improving WRITE performance</b>: If the application requires synchronous WRITES, associate high performing disk to the Pool to speed up the WRITEs. This guarantees better QOS.</p>
+            <p style="text-align: justify;font-family: sans-serif;font-size: 11pt;"><b>Improving READ performance</b>: To improve the READ performance or increase the filesystem cache hit rate, add high performing disks as cache devices to the Pool.</p>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
