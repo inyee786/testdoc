@@ -3,7 +3,7 @@
     <body>
         <p class="note3">
             <b>See also</b>
-            <MadCap:xref href="../../D.Configuring CloudByte ElastiStor/set_up_storage.htm">"Setting up your storage"</MadCap:xref>
+            <a href="../../D.Configuring CloudByte ElastiStor/set_up_storage.htm">"Setting up your storage"</a>
         </p>
     </body>
 </html>
