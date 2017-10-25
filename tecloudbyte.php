@@ -91,6 +91,24 @@ get_header(); ?>
 
 
 
+<div class="col-xs-12 clients pad70_0">
+<div class="col-lg-9 row fltmrg blue-widget-section max-wd npad">
+<div class="col-lg-12 row pad35tp fltmrg npad tt-sect max-wd">
+
+<div style="display:flex;align-items:center;justify-content: space-around;"> 
+  <img src="http://newstag.cloudbyte.com/wp-content/uploads/2017/10/partnerslogo-05.png" alt="" height="102px" width="auto">
+  <img src="http://newstag.cloudbyte.com/wp-content/uploads/2017/10/partnerslogo-04.png" alt="" height="102px" width="auto">
+  <img src="http://newstag.cloudbyte.com/wp-content/uploads/2017/10/partnerslogo-03.png" alt="" height="102px" width="auto">
+  <img src="http://newstag.cloudbyte.com/wp-content/uploads/2017/10/partnerslogo-02.png" alt="" height="102px" width="auto">
+  <img src="http://newstag.cloudbyte.com/wp-content/uploads/2017/10/partnerslogo-01.png" alt="" height="102px" width="auto">
+</div>
+
+</div>
+</div>
+</div>
+
+
+
 
 <div class="col-xs-12 greenbg request pad70_0">
   <div class="col-lg-9 row fltmrg blue-widget-section max-wd npad">
